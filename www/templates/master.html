@@ -23,6 +23,7 @@
 	<div class="list">
     <a class="myItem item-profle-left" ng-repeat="list in lists | filter:filter" href="tabs.detail({petsId: pet.id })">
       <img src="{{list.Poster}}">
+      <h2>{{list.chineseTitle}}</h2>
       <h2>{{list.Title}}</h2>
       <h2>{{list.Year}}</h2>
       <h2>{{list.imdbRating}}</h2>
