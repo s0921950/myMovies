@@ -99,6 +99,7 @@ angular.module('ionicApp', ['ionic'])
             $http.get('http://www.omdbapi.com/?i=' + $scope.movies[i].imdb + '&tomatoes=true').success(function(data) {
                 $scope.lists[i] = data;
                 $scope.lists[i].chineseTitle = $scope.movies[i].chineseTitle;
+                $scope.lists[i].imdb = $scope.movies[i].imdb;
             }).error(function(data, status, headers, config) { // Do some error handling here }); sleep(1000); i++; }
             });
         };
